@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg position-absolute w-100 p-3 bg-dark">
+    <div class="container">
+        <a class="btn btn-outline-info me-3" href="biography.html">
+            ← Back
+        </a>
+    </div>
+</nav>
+
+
+
+
+   <div class="form-wrapper container mt-5 p-4 rounded justify-content-center">
+  <h2 class="form-title mb-4">Register / Contact Form</h2>
+
+  
+  <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="fullname" placeholder="Name" name="fullname" required>
+      <label for="fullname">Full Name</label>
+  </div>
+
+ 
+  <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+      <label for="email">Enter Email</label>
+  </div>
+
+ 
+  <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="password" placeholder="" name="password" required> 
+      <label for="password">Enter Password</label>
+  </div>
+
+  
+  <div class="form-floating mb-3">
+      <input type="number" class="form-control" id="age" name="age" required placeholder="">
+      <label for="age">Enter Age:</label>
+  </div>
+
+  
+  <div class="form-floating mb-3">
+      <input type="date" class="form-control" id="dob" name="dob" required>
+      <label for="dob">Enter Date of Birth:</label>
+  </div>
+
+  
+  <div class="mb-3">
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="male" name="gender" value="male">
+          <label class="form-check-label" for="male">Male</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+          <label class="form-check-label" for="female">Female</label>
+      </div>
+  </div>
+
+  
+  <div class="mb-3">
+      <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="coding" name="coding" required>
+          <label class="form-check-label" for="coding">Coding</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="reading" name="reading" required>
+          <label class="form-check-label" for="reading">Reading</label>
+      </div>
+      <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="traveling" name="traveling" required>
+          <label class="form-check-label" for="traveling">Traveling</label>
+      </div>
+  </div>
+
+ 
+  <div class="form-floating mb-3">
+      <select class="form-select" id="course" name="course" required>
+          <option value="" disabled selected>Select a course</option>
+          <option value="computer science">Computer Science</option>
+          <option value="business">Business</option>
+          <option value="art">Art</option>
+          <option value="science">Science</option>
+      </select>
+      <label for="course">Course</label>
+  </div>
+
+  
+  <div class="form-floating mb-3">
+      <textarea id="about" class="form-control" name="about" rows="4" required placeholder="Comment goes here"></textarea>
+      <label for="about">About Yourself:</label>
+  </div>
+
+  
+  <div class="d-flex justify-content-center mt-4">
+    <input type="button" class="btn btn-neon" onclick="showAlert()" value="Submit">
+</div>
+
+
+  <div id="succesAlert" class="alert alert-success alert-dismissible d-none mt-3">
+      <strong>Success!</strong> Form submitted successfully.
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+<script>
+function showAlert() {
+    document.getElementById("succesAlert").classList.remove("d-none");
+    setTimeout(function() {
+        document.getElementById("succesAlert").classList.add("d-none");
+    }, 3000); // Hide the alert after 3 seconds
+}
+</script>
+
+</body>
+</html>

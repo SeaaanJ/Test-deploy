@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">SEAN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="cursor: none;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Custom Hero content -->
+     <Section id="home" class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="container-fluid m-auto vh-100 d-flex flex-column justify-content-center align-items-center mb-5">
+                            <H1>HI, Im Sean</H1>
+                            <P>IT Student • Beginner Web Developer</P>
+
+                            <div class="btn-container">
+                        <button class="cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                            Let's Work Together
+                        </button>
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+     </Section>
+
+
+     <section id="about" class="about">
+        <div class="container mb-5">
+    <div class="row align-items-center">
+      <div class="col-lg-5 mb-4">
+        <img src="https://scontent.fcgy1-2.fna.fbcdn.net/v/t39.30808-6/497494221_10077030955745580_6019035524999115912_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=h_IEc3rDBU8Q7kNvwEfvdpt&_nc_oc=AdkIaz7B40iH6G-R8BXzBHH6cTGIoWb_kEIozYecuV550T2Yx8CydqTSZX0BJrvwrqE&_nc_zt=23&_nc_ht=scontent.fcgy1-2.fna&_nc_gid=CDGK1Wkps1L8HmRYaclvXg&oh=00_AfqO9-_9WlpGnPTs4SLUQ2Va_qViBeZW1nR32pxvqtjNIg&oe=697FF38C" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-7">
+        <h2 class="fw-bold">About Me</h2>
+        <p class="about-text">
+          Im an IT student learning web development using HTML, CSS, Bootstrap, and JavaScript.
+          I enjoy building responsive, clean, and user-friendly websites while improving my skills
+          through hands-on projects.
+        </p>
+        <div class="d-flex justify-content-center">
+    <a href="biography.html" target="_blank" class="abtBtn">Read More</a>
+</div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title reveal">My Skills</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="skills card col-lg-3 col-md-6">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon">&lt;/&gt;</div>
+                        <h3 class="skill-name">HTML</h3>
+                    </div>
+                </div>
+                <div class="skills card col-lg-3 col-md-6">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon">{ }</div>
+                        <h3 class="skill-name">CSS</h3>
+                        
+                    </div>
+                </div>
+                <div class="skills card col-lg-3 col-md-6">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon">⚡</div>
+                        <h3 class="skill-name">Bootstrap</h3>
+                        
+                    </div>
+                </div>
+                <div class="skills card col-lg-3 col-md-6">
+                    <div class="skill-card text-center">
+                        <div class="skill-icon">JS</div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title reveal">Featured Projects</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="project-card">
+                       <div class="project-image d-flex align-items-center justify-content-center text-center">
+                         Hotel Reservation System
+                            </div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Hotel Reservation System</h3>
+                            <p class="project-description">A collaborative hotel reservation system developed with my Groupmates as a requirement for IT6L course.</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="project-card">
+                        <div class="project-image text-center">Personal Project</div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Taxi Recording website</h3>
+                            <p class="project-description">Interactive data visualization, and a way to automize the recording of data from using pen and paper to paperless.</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="project-card">
+                        <div class="project-image">CRUD Python</div>
+                        <div class="project-overlay">
+                            <h3 class="project-title">Python CRUD</h3>
+                            <p class="project-description">A Python project developed as a requirement for IT5L course.</p>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title reveal">Get In Touch</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <form class="contact-form reveal">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="cta-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <footer>
+        <div class="container">
+            <div class="social-links">
+    <a href="https://github.com/SeaaanJ" class="social-icon" target="_blank">
+        <i class="bi bi-github"></i>
+    </a>
+    <a href="https://facebook.com/imbasorry.sean" class="social-icon" target="_blank">
+        <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/snjrdgstr/" class="social-icon" target="_blank">
+        <i class="bi bi-instagram"></i>
+    </a>
+    <a href="mailto:s.gastar.561165@umindanao.edu.ph" class="social-icon">
+        <i class="bi bi-envelope-fill"></i>
+    </a>
+</div>
+            <p>&copy; 2026 Sean Sean Portfolio.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+</body>
+</html>
