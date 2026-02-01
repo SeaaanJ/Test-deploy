@@ -19,8 +19,17 @@
             color: var(--light);
             background: var(--primary);
             overflow-x: hidden;
+            
         
         }
+
+        body {
+    position: relative;
+}
+
+
+
+
 
 
          /* Navbar */
@@ -106,6 +115,27 @@
             position: relative;
             transition: color 0.3s ease;
         }
+
+       .nav-link.active {
+    color: var(--secondary) !important;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%; /* Full width underline */
+    height: 3px; /* Thickness of underline */
+    background: var(--secondary);
+}
+
+
+.nav-link.active::after {
+    width: 100% !important; /* Keep underline at full width */
+}
+        
         
         .nav-link::after {
             content: '';

@@ -9,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Sean | Portfolio
+    </title>
 </head>
 <body>
+
     
 <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -217,5 +219,44 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+<script>
+    
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section');
+
+    
+    function removeActiveClasses() {
+        navLinks.forEach(link => link.classList.remove('active'));
+    }
+
+    
+    function addActiveClass() {
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            
+            if (window.scrollY >= (sectionTop - 150)) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        
+        removeActiveClasses();
+
+        
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === '#' + currentSection) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    
+    window.addEventListener('scroll', addActiveClass);
+    addActiveClass();
+</script>
 </body>
 </html>
